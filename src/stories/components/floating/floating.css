@@ -1,0 +1,35 @@
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-group {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    transition: all 200ms linear;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
+    outline: 0;
+    text-transform: capitalize;
+    transition: opacity 0.6s ease-in-out;
+    /* box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.button-group:hover {
+    opacity: 0.8;
+}
+
+.button-group:active {
+    transform: scale(0.99);
+}
