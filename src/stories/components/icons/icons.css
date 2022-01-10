@@ -1,0 +1,59 @@
+.ico {
+    text-align: center;
+}
+
+.ico h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.ico-container {
+    margin: 15px 0;
+}
+
+.ico-primary {
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgba(32, 20, 97, 0.582);
+}
+
+.ico-iner {
+    display: flex;
+    flex-direction: row;
+}
+
+.ico-icon {
+    margin: 15px;
+    width: 150px !important;
+    min-width: 150px;
+    background: #fff;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #510ffa
+}
+
+.ico-text {
+    text-align: start;
+    margin-left: 10px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease-in-out;
+    color: rgb(71, 71, 71);
+    padding: 0 6px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.ico-text:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.075);
+}
+
+.ico-text:focus {
+    content: '';
+    transform: scale(1.2);
+}

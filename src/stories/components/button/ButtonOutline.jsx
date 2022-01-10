@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 import './buttonsOutline.css'
 import styled , { css } from 'styled-components';
 
+import { Icon } from '../icons/Icons';
 
-export function ButtonOutline({ children,outline,label,backgroundColor,variant, size,onClick, disabled, ...props }) {
-    
+
+
+
+export function ButtonOutline({ children,icons, icoSize,spin, regular,pulse,border,outline,label,backgroundColor,variant, size,onClick, disabled, ...props }) {
+    console.log(icons)
     const handleColorType = variant => {
         switch (variant) {
             
@@ -36,16 +40,18 @@ export function ButtonOutline({ children,outline,label,backgroundColor,variant, 
             line-height: 0.7; 
             height:40px; 
             width: 150px;
+            border-radius:14px;
           
             
           `;
           case "large":
             return css`
             font-weight: 400; 
-            font-size: 1.3rem; 
+            font-size: 1.7rem; 
             line-height: 2; 
             height:75px; 
             width: 250px;
+            border-radius:25px;
           
             
           `;
@@ -56,6 +62,7 @@ export function ButtonOutline({ children,outline,label,backgroundColor,variant, 
             line-height: 2; 
             height:50px; 
             width: 200px;
+            border-radius:20px;
           
             
           `;
@@ -67,6 +74,7 @@ export function ButtonOutline({ children,outline,label,backgroundColor,variant, 
             font-size: 1.3rem; 
             line-height: 2; 
             height:50px; width: 200px;
+            border-radius:20px;
           
             
           `;}
@@ -95,10 +103,24 @@ export function ButtonOutline({ children,outline,label,backgroundColor,variant, 
                     size={size}
                     variant={variant} 
                     className='outlined outline-group'
-                    onClick={!disabled ? onClick : () => {}}
+                    onClick={!disabled ? onClick : () => {
+                        alert(icons)
+                    }}
                     disabled={disabled}
                     >
-                        {label}
+                                    
+                                    
+                        {
+                        
+                        
+                        
+                        icons ?  <p >{label}  <span className='icon-size'>  <Icon spin={spin} icoSize={icoSize} icons={icons} regular={regular}pulse={pulse} border={border}/></span></p> :  <p>{label}</p>
+
+                            
+
+                        }
+                       
+                        
                     
                     </ButtonOutline>
         </div>

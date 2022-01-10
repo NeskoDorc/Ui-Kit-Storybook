@@ -19,10 +19,17 @@
     letter-spacing: 1px !important;
     color: #333 !important;
     transition: background-color 0.7s ease-in-out !important;
-    z-index: 0;
-    transition: 1s;
     cursor: pointer;
     text-transform: capitalize;
+}
+
+.outline-group p {
+    display: inherit;
+    align-items: center;
+}
+
+.outline-group span {
+    margin-left: 5px;
 }
 
 .outline-group:hover {
@@ -32,3 +39,5 @@
 .outline-group:active {
     transform: scale(0.98);
 }
+
+.icon-size {}

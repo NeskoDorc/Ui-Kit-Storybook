@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 import './button.css';
 import styled , { css } from 'styled-components';
 
-export const Button = ({ children,outlined,label,backgroundColor,variant, size,onClick, disabled, ...props }) => {
+import { Icon } from '../icons/Icons';
+
+export const Button = ({ children,outlined,icons,icoSize,spin,regular,border,pulse,label,backgroundColor,variant, size,onClick, disabled, ...props }) => {
 
 
     const handleColorType = variant => {
@@ -95,7 +97,20 @@ export const Button = ({ children,outlined,label,backgroundColor,variant, size,o
  onClick={!disabled ? onClick : () => {}}
  disabled={disabled}
  
- >{label}</Button>
+ >
+                  
+                  {
+                        
+                        
+                        
+                        icons ?  <p >{label}  <span className='icon-size'>  <Icon spin={spin} icoSize={icoSize} icons={icons} regular={regular}pulse={pulse} border={border}/></span></p> :  <p>{label}</p>
+
+                            
+
+                        }
+ 
+ 
+ </Button>
     
         </div>
     )
