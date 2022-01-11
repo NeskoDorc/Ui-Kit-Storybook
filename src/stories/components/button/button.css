@@ -26,12 +26,17 @@
     /* box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.1); */
 }
 
-.button-group p {
+.button-group .label {
     display: inherit;
     align-items: center;
 }
 
-.button-group span {
+
+/* .button-group span {
+    margin-left: 10px;
+} */
+
+.icon-span {
     margin-left: 10px;
 }
 
@@ -49,4 +54,15 @@ button[disabled] {
     opacity: 0.9;
     border: 1px solid #999999;
     color: #666666;
+}
+
+button:disabled,
+button[disabled]:hover {
+    opacity: 1;
+}
+
+button:disabled,
+button[disabled]:active {
+    transform: scale(1);
+    cursor: default;
 }

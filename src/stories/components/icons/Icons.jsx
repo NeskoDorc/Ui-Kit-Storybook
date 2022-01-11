@@ -11,7 +11,7 @@ library.add(far, fab,fas);
 export function Icon({icons, icoSize,spin, regular,pulse,border }) {
 
 
-    console.log(regular)
+    
 
 
     return (

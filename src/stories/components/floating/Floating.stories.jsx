@@ -11,8 +11,8 @@ const Template = (args) => (
 <div>
 <div className='buttons-container'>
      
-    <Floating label='primary' variant='primary' {...args} />
-    <Floating label='success' variant='success'  {...args}/>
+    <Floating   label='primary'  {...args} />
+    <Floating  label='success' variant='success'  {...args}/>
     <Floating label='info' variant='info' {...args} />
     <Floating label='default '    {...args}/>   
    
@@ -28,7 +28,7 @@ const Template = (args) => (
 
 export const Floatings = Template.bind({});
 Floatings.args = {
-  user: {},
+ 
 };
 
 

@@ -33,7 +33,7 @@ Toolbars
 </Description>
           <Primary />
           <ArgsTable story={PRIMARY_STORY} />
-          <Stories title ={Sizes} />
+          <Stories />
         </> 
       ),
     },
@@ -47,16 +47,16 @@ const Template = (args) => (
 <div className='buttons-container'>
      
     <Button label='primary'  variant='primary' {...args} />
-    <Button label='success' variant='success'  {...args}/>
-    <Button label='info' variant='info' {...args} />
-    <Button label='default '    {...args}/>   
+    <Button label='success'  variant='success'  {...args}/>
+    <Button label='info'  variant='info' {...args} />
+    <Button label='default '  {...args}/>   
    
     </div>
     <div className='buttons-container'>
    
-    <Button label='danger' variant='danger'  {...args}/>
-    <Button label='warning' variant='warning'   {...args}/>
-    <Button label='dark' variant='dark'   {...args}/>
+    <Button label='danger'  variant='danger'  {...args}/>
+    <Button label='warning'  variant='warning'   {...args}/>
+    <Button label='dark'  variant='dark'   {...args}/>
     </div>
     </div>
 );
@@ -94,7 +94,7 @@ const TemplateSecond = (args) => (
      
     <ButtonOutline label='primary' size='small' variant='primary' {...args} />
     <ButtonOutline label='success' size='small' variant='success'  {...args}/>
-    <ButtonOutline label='info'  size='small'  variant='info' {...args} />
+    <ButtonOutline label='info'  size='small' variant='info' {...args} />
     
    
     </div>
@@ -103,7 +103,7 @@ const TemplateSecond = (args) => (
    
     <ButtonOutline label='danger' size='medium' variant='primary'  {...args}/>
     <ButtonOutline label='warning' size='medium' variant='success'   {...args}/>
-    <ButtonOutline label='dark' size='medium' variant='info'   {...args}/>
+    <ButtonOutline label='dark'    size='medium' variant='info'   {...args}/>
     </div>
     <div className='buttons-container'>
    
@@ -125,7 +125,7 @@ const TemplateSecond = (args) => (
           <ButtonOutline label='primary'  variant='primary' {...args} />
           <ButtonOutline label='success' variant='success'  {...args}/>
           <ButtonOutline label='info' variant='info' {...args} />
-          <ButtonOutline label='default '    {...args}/>   
+          <ButtonOutline label='default'   {...args}/>   
          
           </div>
           <div className='buttons-container'>
@@ -138,37 +138,11 @@ const TemplateSecond = (args) => (
       
       
           );
-          const TemplateButtonIcon = (args) => (
-  
-            <div>
-            <div className='buttons-container'>
-            
-                    <ButtonOutline label='primary' icoSize='2x' regular={true} icons='grin-tears' size='small' variant='primary' {...args} />
-                    <ButtonOutline label='success' size='small' variant='success'  {...args}/>
-                    <ButtonOutline label='info'  size='small'  variant='info' {...args} />
-                
-               
-                </div>
-                
-                <div className='buttons-container'>
-                  <Button label='primary' size='medium'  variant='primary' {...args} />
-                  <Button label='success'  regular={true} icons='edit' size='medium' variant='success'  {...args}/>
-                  <Button regular={true} icoSize='lg' icons='edit' size='medium'   {...args}/>   
-                </div>
-                <div className='buttons-container'>
-               
-                  <ButtonOutline label='danger'  icons='earlybirds' size='large' variant='primary'  {...args}/>
-                  <ButtonOutline label='warning' size='large' variant='success'   {...args}/>
-                  <ButtonOutline label='dark' icoSize='lg' regular={true} icons='dizzy'  size='large'  variant='info'   {...args}/>
-                </div>
-                </div>
-            
-            
-                );
-      
+         
 
 export const Buttons = Template.bind({});
 Button.args = {
+  size:'medium'
 
  
   
@@ -185,11 +159,9 @@ Disabled.args = {
   
  
   disabled:true,
+  
  
 };
-
-
-
 
 export const Sizes = TemplateSecond.bind({});
 Sizes.args = {
@@ -210,12 +182,6 @@ Outline.args = {
 
 };
 
-export const ButtonWithIcon = TemplateButtonIcon.bind({});
-Outline.args = {
- 
- 
-
-};
 
 
 

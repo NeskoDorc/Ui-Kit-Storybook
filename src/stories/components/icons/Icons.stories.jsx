@@ -114,7 +114,7 @@ const Template = (args) =>
     <Icon icoSize='4x'  icons='github-square' {...args} />
     </div>
     <div className='ico-icon'>
-    <Icon icoSize='3x' icons='address-card' {...args} />
+    <Icon icoSize='3x' regular={true} icons='address-card' {...args} />
     </div>
    
 
@@ -128,7 +128,7 @@ const Template = (args) =>
     <Icon icoSize='4x'  icons='github-square' {...args} />
     </div>
     <div className='ico-icon'>
-    <Icon icoSize='3x' icons='address-card' {...args} />
+    <Icon icoSize='3x' regular={true} icons='address-card' {...args} />
     </div>
    
 

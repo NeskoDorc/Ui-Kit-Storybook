@@ -23,13 +23,13 @@
     text-transform: capitalize;
 }
 
-.outline-group p {
+.outline-group .label {
     display: inherit;
     align-items: center;
 }
 
-.outline-group span {
-    margin-left: 5px;
+.icon-span {
+    margin-left: 10px;
 }
 
 .outline-group:hover {
@@ -39,5 +39,3 @@
 .outline-group:active {
     transform: scale(0.98);
 }
-
-.icon-size {}
